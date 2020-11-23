@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+
+.bt {
+  
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  background-color: #008CBA;
+  cursor: pointer;
+}
+.mm{
+  text-align: center;
+}
+
+</style>
+    </head>
+    <body id="b">
+<div class="mm">
+<h1>Click the button to change the background Which you choose</h1>
+
+        
+        <input id="col" type="color" >
+       <button class="bt" id="ch" >Change</button>
+</div>
+        <script type="text/javascript">
+
+             
+
+             $("#ch").click(function()
+             {  var x =document.getElementById("col").value;
+                //  document.body.style.backgroundColor=x;
+                 $("#b").css("background-color",x);
+             });     
+                </script>
+    </body>
+</html>
